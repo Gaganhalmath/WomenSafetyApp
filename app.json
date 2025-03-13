@@ -1,28 +1,37 @@
 {
   "expo": {
-    "name": "WomenSafetyApp",
-    "slug": "WomenSafetyApp",
+    "name": "womensafetyapp",
+    "slug": "womensafetyapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
+    "updates": {
+      "fallbackToCacheTimeout": 0
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "newArchEnabled": true,
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "permissions": [
+        "RECORD_AUDIO",
+        "INTERNET"
+      ],
+      "package": "com.anonymous.womensafetyapp"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app requires microphone access for voice recognition and SOS features."
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      "expo-asset"
+    ]
   }
 }
