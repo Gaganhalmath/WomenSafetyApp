@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const twilio = require('twilio');
 
-const accountSid = 'ACdc1eef8c459146b961d784fc72615fc4';
-const authToken = '8531d4b24a5d4e93630f3e89fd1f9314';
+const accountSid = '.........................'; //replace the dots with  Your Account SID from www.twilio.com/console
+const authToken = '.................................';//replace the dots with Your Auth Token from www.twilio.com/console
 const client = new twilio(accountSid, authToken);
 
 router.post('/send-alert', async (req, res) => {
